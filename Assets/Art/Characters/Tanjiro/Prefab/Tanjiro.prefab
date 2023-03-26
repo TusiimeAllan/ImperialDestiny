@@ -171,9 +171,10 @@ GameObject:
   m_Component:
   - component: {fileID: 240931540254010724}
   - component: {fileID: 6176644150213670686}
+  - component: {fileID: 4674456980230049237}
   m_Layer: 0
   m_Name: Tanjiro
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -217,16 +218,37 @@ Animator:
   m_GameObject: {fileID: 584383115879217118}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: e12658f0220cf06438ae5079211ad8e7, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e033ce531d287c445a8c8e63e1c982c2, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'CC_Base_BoneRoot'\n\tTransform 'CC_Base_R_Foot'\n\tTransform
+    'CC_Base_R_Calf'\n\tTransform 'CC_Base_L_Thumb1'\n\tTransform 'CC_Base_L_Clavicle'\n\tTransform
+    'CC_Base_R_Clavicle'\n\tTransform 'CC_Base_NeckTwist01'\n\tTransform 'CC_Base_R_Index2'\n\tTransform
+    'CC_Base_L_Index2'\n\tTransform 'CC_Base_BoneRoot'\n\tand more ...\n\tFrom animation
+    clip 'Idle'\n\tFrom animation clip 'Victory'\n\tFrom animation clip 'Attack'\n\tFrom
+    animation clip 'Death'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4674456980230049237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584383115879217118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3adb00b8bdb48e48af7e2680b360964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
+  _player: {fileID: 11400000, guid: ee817c1bfd100dd49af57020f398dd29, type: 2}
 --- !u!1 &657361901790099241
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3efe3e5a38f44bb40976531b1b305993, type: 3}
   m_Name: Tanjiro
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  health: 100
   experienceGiven: 10
   attackStrength: 40
+  healAmount: 30
   idleAnimation: {fileID: 7400000, guid: 09ed7bfa7eef1b447a0fc81a133202b0, type: 2}
   attackAnimation: {fileID: 7400000, guid: 6c19d81573fa9dd4a91cc544bd5b5879, type: 2}
   victoryAnimation: {fileID: 7400000, guid: 05a86edac47f06c4fa48e0296a9f44d0, type: 2}

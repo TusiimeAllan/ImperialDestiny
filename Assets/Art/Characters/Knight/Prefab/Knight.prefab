@@ -44,9 +44,10 @@ GameObject:
   m_Component:
   - component: {fileID: 966209516095711470}
   - component: {fileID: 6595669792202519188}
+  - component: {fileID: 7105601596753283110}
   m_Layer: 0
   m_Name: Knight
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,7 +87,7 @@ Animator:
   m_GameObject: {fileID: 442332166681850452}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 1ca5aad1ceb53bb4bb44b13617c42f17, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d46bffc08d3b1334f9973f0f3db497b6, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -96,6 +97,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7105601596753283110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442332166681850452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e5c834e257e65d48bd3aaf37fd47e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
+  _enemy: {fileID: 11400000, guid: a4eee9a6401969c4a8d3ed869943d545, type: 2}
 --- !u!1 &647728249917967683
 GameObject:
   m_ObjectHideFlags: 0

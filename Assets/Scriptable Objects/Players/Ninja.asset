@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3efe3e5a38f44bb40976531b1b305993, type: 3}
   m_Name: Ninja
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  health: 100
   experienceGiven: 10
+  alive: 1
   attackStrength: 20
+  healAmount: 20
   idleAnimation: {fileID: 7400000, guid: f44063bd590299740b1a73834897b180, type: 2}
   attackAnimation: {fileID: 7400000, guid: 14ec5cd0a697e50498a4559047d8ebfe, type: 2}
   victoryAnimation: {fileID: 7400000, guid: 8698ab4fc0b2478499e10a40df43567f, type: 2}

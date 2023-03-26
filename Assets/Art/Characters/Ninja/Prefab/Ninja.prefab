@@ -1448,9 +1448,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3217348763881910429}
   - component: {fileID: 8810867654018788071}
+  - component: {fileID: 3246204138467003666}
   m_Layer: 0
   m_Name: Ninja
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1482,7 +1483,7 @@ Animator:
   m_GameObject: {fileID: 2877097621590731303}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: a145cdf5413bf1240b73588e2da3ec09, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e34de62f6e1e5474ca7d5462a08591a9, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -1492,6 +1493,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3246204138467003666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2877097621590731303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3adb00b8bdb48e48af7e2680b360964, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 11400000, guid: 51ab70f4d4127904f9089b45eeae2ddb, type: 2}
 --- !u!1 &2903607842512695174
 GameObject:
   m_ObjectHideFlags: 0

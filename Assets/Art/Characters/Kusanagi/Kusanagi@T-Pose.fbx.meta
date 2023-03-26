@@ -86,7 +86,657 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Kusanagi@T-Pose(Clone)
+      parentName: 
+      position: {x: 0.000000052806236, y: 0.0070273587, z: -0.0007857306}
+      rotation: {x: -1.09029044e-13, y: -9.609246e-10, z: 0.000000031223404, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: geo
+      parentName: Kusanagi@T-Pose(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hair1
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head1
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_eye1
+      parentName: geo
+      position: {x: 0.009541942, y: 0.017005706, z: 0.28150296}
+      rotation: {x: 0.086637735, y: 0.1084526, z: -0.009488375, w: 0.99027365}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_eye1
+      parentName: geo
+      position: {x: -0.009541942, y: 0.017005706, z: 0.28150296}
+      rotation: {x: 0.086637735, y: -0.1084526, z: 0.009488375, w: 0.99027365}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_eyelash_top
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_eyelash_btm
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_eyelash_top
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_eyelash_btm
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: tongue
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: chest
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: body
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: gloves
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: gear
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: gear1
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: gear2
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: gear3
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: gear4
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: teethTop
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: teethBtm
+      parentName: geo
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root Ground
+      parentName: Kusanagi@T-Pose(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: God
+      parentName: Root Ground
+      position: {x: -0, y: 0, z: 0.98561096}
+      rotation: {x: 0, y: 0, z: 0.7071064, w: 0.7071072}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_Pelvis
+      parentName: God
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.5, y: 0.5, z: 0.49999946, w: 0.50000054}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_Spine
+      parentName: valvebiped.bip01_Pelvis
+      position: {x: -0.105524994, y: -0.00007545, z: 0.00000014}
+      rotation: {x: -0.0000020009602, y: 0.00000049017996, z: -0.0000000065060215, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_Spine1
+      parentName: valvebiped.bip01_Spine
+      position: {x: -0.09482523, y: -0.00010956003, z: 9.473216e-20}
+      rotation: {x: 0, y: 1.6802968e-29, z: -1.0587912e-22, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_Spine2
+      parentName: valvebiped.bip01_Spine1
+      position: {x: -0.13759305, y: -0.00013100004, z: 1.3823577e-19}
+      rotation: {x: 0, y: 1.6802968e-29, z: -1.0587912e-22, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_Neck
+      parentName: valvebiped.bip01_Spine2
+      position: {x: -0.18476506, y: -0.038608313, z: -0.00000001}
+      rotation: {x: 2.1316282e-13, y: -3.9387032e-19, z: -0.00000011920929, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head
+      parentName: valvebiped.bip01_Neck
+      position: {x: -0.06533128, y: -0.0000046700975, z: -0.00000069085553}
+      rotation: {x: -0.20023543, y: 0.6781635, z: 0.20023543, w: 0.6781635}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_hair_01_jnt
+      parentName: head
+      position: {x: 0.07176168, y: 0.023773419, z: -0.04836979}
+      rotation: {x: 0.7407896, y: -0.0003204224, z: 0.00019964812, w: 0.6717371}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_hair_02_jnt
+      parentName: R_hair_01_jnt
+      position: {x: -0.000000029733934, y: 0.042942062, z: -0.0000000010455659}
+      rotation: {x: -0.1152856, y: -0.16505964, z: 0.10064127, w: 0.9743387}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_hair_03_jnt
+      parentName: R_hair_02_jnt
+      position: {x: 0.00000005524327, y: 0.051455554, z: 0.00000006525746}
+      rotation: {x: 0.16792093, y: -0.20310874, z: 0.056697223, w: 0.9629823}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_hair_04_jnt
+      parentName: R_hair_03_jnt
+      position: {x: -0.00000019848866, y: 0.04190852, z: -0.000000021246365}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_hair_05_jnt
+      parentName: R_hair_04_jnt
+      position: {x: -4.5686077e-10, y: 0.00479988, z: 0.0000000016985641}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_hair_01_jnt
+      parentName: head
+      position: {x: -0.07168064, y: 0.023804378, z: -0.048474416}
+      rotation: {x: 0.7407896, y: -0.00031903447, z: 0.00019939194, w: 0.6717371}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_hair_02_jnt
+      parentName: L_hair_01_jnt
+      position: {x: -0.000000043396838, y: 0.04294195, z: 0.000000033655336}
+      rotation: {x: -0.115284696, y: 0.16505902, z: -0.10064184, w: 0.9743388}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_hair_03_jnt
+      parentName: L_hair_02_jnt
+      position: {x: 0.000000090555474, y: 0.05145561, z: -0.000000068256305}
+      rotation: {x: 0.16792138, y: 0.20310406, z: -0.056692086, w: 0.9629835}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_hair_04_jnt
+      parentName: L_hair_03_jnt
+      position: {x: 0.00000012523954, y: 0.041908592, z: -0.0000000023316982}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_hair_05_jnt
+      parentName: L_hair_04_jnt
+      position: {x: 6.906575e-10, y: 0.004799888, z: 0.0000000015294577}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_eyebrow_01_jnt
+      parentName: head
+      position: {x: 0.01640115, y: 0.1330173, z: -0.0039159786}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_eyebrow_02_jnt
+      parentName: head
+      position: {x: 0.03296616, y: 0.13065602, z: -0.011697306}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_eyebrow_03_jnt
+      parentName: head
+      position: {x: 0.0473216, y: 0.12157769, z: -0.019278878}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hair
+      parentName: head
+      position: {x: 0.00000014243761, y: 0.0773674, z: -0.11959369}
+      rotation: {x: -0.47792867, y: -0.0000011173627, z: 0.000000038727617, w: 0.87839866}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_eyeCenter
+      parentName: head
+      position: {x: 0.02649991, y: 0.10574719, z: -0.015972385}
+      rotation: {x: -0.39717773, y: 0.09072875, z: -0.060167048, w: 0.9112618}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_eye
+      parentName: R_eyeCenter
+      position: {x: -6.661338e-18, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: e_eye_end
+      parentName: R_eye
+      position: {x: -7.105427e-17, y: 5.684342e-16, z: 0.018999988}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_eyelidTop
+      parentName: R_eyeCenter
+      position: {x: -6.661338e-17, y: -2.842171e-16, z: 2.842171e-16}
+      rotation: {x: -0.10943635, y: 0.03546166, z: 0.030570561, w: 0.99289054}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_eyelidTop_end
+      parentName: R_eyelidTop
+      position: {x: -3.5527136e-17, y: 3.410605e-15, z: 0.024999999}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_eyelidBtm
+      parentName: R_eyeCenter
+      position: {x: -6.661338e-17, y: -2.842171e-16, z: 2.842171e-16}
+      rotation: {x: 0.24725942, y: 0.043956194, z: 0.016122716, w: 0.96781754}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_eyelidBtm_end
+      parentName: R_eyelidBtm
+      position: {x: -1.0658141e-16, y: 2.8421708e-15, z: 0.024999999}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_cheeck_jnt
+      parentName: head
+      position: {x: -0.04972, y: 0.09110321, z: 0.01283}
+      rotation: {x: -0.47792867, y: -0.0000011173627, z: 0.000000038727617, w: 0.87839866}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_cheek_jnt
+      parentName: head
+      position: {x: 0.04971977, y: 0.09110195, z: 0.012832371}
+      rotation: {x: 0.87839866, y: 0.0000009979275, z: 0.000001691762, w: 0.47792867}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_eyeCenter
+      parentName: head
+      position: {x: -0.02650009, y: 0.10574714, z: -0.01597252}
+      rotation: {x: 0.91126156, y: 0.060167313, z: 0.09073096, w: 0.39717776}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_eye
+      parentName: L_eyeCenter
+      position: {x: 1.5543122e-17, y: 0, z: -7.105427e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_eye_end
+      parentName: L_eye
+      position: {x: -0.000000025619736, y: 0.00000067566737, z: -0.01900011}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_eyelidTop
+      parentName: L_eyeCenter
+      position: {x: 1.5543122e-17, y: 0, z: -7.105427e-17}
+      rotation: {x: -0.10943635, y: 0.03546166, z: 0.030570561, w: 0.99289054}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_eyelidTop_end
+      parentName: L_eyelidTop
+      position: {x: -0.00000016122374, y: -0.0000025378351, z: -0.025000103}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_eyelidBtm
+      parentName: L_eyeCenter
+      position: {x: 1.5543122e-17, y: 0, z: -7.105427e-17}
+      rotation: {x: 0.24725942, y: 0.043956194, z: 0.016122716, w: 0.96781754}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_eyelidBtm_end
+      parentName: L_eyelidBtm
+      position: {x: -0.00000011556921, y: -0.0000016088615, z: -0.024998758}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_eyebrow_03_jnt
+      parentName: head
+      position: {x: -0.0473218, y: 0.12157492, z: -0.019275034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_eyebrow_02_jnt
+      parentName: head
+      position: {x: -0.032966428, y: 0.13065581, z: -0.0116972765}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_eyebrow_01_jnt
+      parentName: head
+      position: {x: -0.016401444, y: 0.13301758, z: -0.003916579}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_lipCorner
+      parentName: head
+      position: {x: -0.020769252, y: 0.07959316, z: 0.046196356}
+      rotation: {x: -0.47792867, y: -0.0000011173627, z: 0.000000038727617, w: 0.87839866}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_lipTop
+      parentName: head
+      position: {x: -0.011627166, y: 0.089940906, z: 0.049482606}
+      rotation: {x: -0.47792867, y: -0.0000011173627, z: 0.000000038727617, w: 0.87839866}
+      scale: {x: 1, y: 1, z: 1}
+    - name: c_lipTop
+      parentName: head
+      position: {x: -0.0000011366706, y: 0.09352542, z: 0.04900531}
+      rotation: {x: -0.47792867, y: -0.0000011173627, z: 0.000000038727617, w: 0.87839866}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_lipCorner1
+      parentName: head
+      position: {x: 0.020768918, y: 0.079595596, z: 0.04619265}
+      rotation: {x: -0.47792548, y: -0.0000004779265, z: 0.000000955858, w: 0.8784004}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_lipTop1
+      parentName: head
+      position: {x: 0.011626801, y: 0.0899426, z: 0.049480017}
+      rotation: {x: -0.47792548, y: -0.0000004779265, z: 0.000000955858, w: 0.8784004}
+      scale: {x: 1, y: 1, z: 1}
+    - name: jaw
+      parentName: head
+      position: {x: -0, y: 0.0175, z: -0.015}
+      rotation: {x: 0.46174863, y: 5.5393233e-13, z: -1.6319977e-12, w: 0.8870109}
+      scale: {x: 1, y: 1, z: 1}
+    - name: jaw_end
+      parentName: jaw
+      position: {x: -6.464836e-11, y: 0.09245858, z: 0.001719094}
+      rotation: {x: 0.0000010542572, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: tongue_01_jnt
+      parentName: jaw
+      position: {x: 0.00000008313319, y: 0.07750277, z: -0.01372739}
+      rotation: {x: -0.06778623, y: -0.0000016821604, z: -0.0000009889682, w: 0.99769986}
+      scale: {x: 1, y: 1, z: 1}
+    - name: tongue_02_jnt
+      parentName: tongue_01_jnt
+      position: {x: -4.54849e-12, y: 0.0047998875, z: -0.00000000839026}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_lipBtm
+      parentName: jaw
+      position: {x: 0.0090672225, y: 0.09326002, z: -0.015862351}
+      rotation: {x: -0.82952726, y: -0.0000038929165, z: 0.0000022011786, w: 0.5584662}
+      scale: {x: 1, y: 1, z: 1}
+    - name: c_lipBtm
+      parentName: jaw
+      position: {x: 0.00000009551564, y: 0.09222947, z: -0.013495743}
+      rotation: {x: -0.06778552, y: -0.0000019707802, z: -0.00000058733514, w: 0.9976999}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_lipBtm
+      parentName: jaw
+      position: {x: -0.0090676285, y: 0.09326081, z: -0.015860302}
+      rotation: {x: -0.82952726, y: 6.148073e-22, z: -4.1390938e-22, w: 0.5584662}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Clavicle
+      parentName: valvebiped.bip01_Spine2
+      position: {x: -0.13199283, y: -0.042078294, z: -0.055471208}
+      rotation: {x: 0.6616091, y: 0.054365072, z: 0.74716216, w: 0.03265797}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_UpperArm
+      parentName: valvebiped.bip01_r_Clavicle
+      position: {x: -0.08303929, y: 0.0000000031568692, z: 0.00000006728284}
+      rotation: {x: 0.0069287485, y: -0.05910285, z: 0.0628711, w: 0.99624604}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_ForeArm
+      parentName: valvebiped.bip01_r_UpperArm
+      position: {x: -0.25342914, y: -0.000000008695079, z: 0.00000011403024}
+      rotation: {x: 0.000000059545048, y: -7.338208e-11, z: 0.00000037846766, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Hand
+      parentName: valvebiped.bip01_r_ForeArm
+      position: {x: -0.2539941, y: -0.000000031305685, z: 0.00000006250935}
+      rotation: {x: 0.30889082, y: -0.024240328, z: 0.028134268, w: 0.9503723}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Finger1
+      parentName: valvebiped.bip01_r_Hand
+      position: {x: -0.07981044, y: -0.008235917, z: 0.029192213}
+      rotation: {x: -0.013713535, y: 0.099370375, z: 0.04812529, w: 0.99379146}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Finger11
+      parentName: valvebiped.bip01_r_Finger1
+      position: {x: -0.03107752, y: 0.00000004030626, z: 0.0000000017697559}
+      rotation: {x: -1.4300442e-14, y: -0.00000007702357, z: -0.00000015647471, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Finger12
+      parentName: valvebiped.bip01_r_Finger11
+      position: {x: -0.030998027, y: -0.000000044543434, z: -0.000000030260814}
+      rotation: {x: 0, y: -0, z: -0.15332493, w: 0.9881758}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Finger2
+      parentName: valvebiped.bip01_r_Hand
+      position: {x: -0.07939504, y: -0.006167098, z: -0.012246798}
+      rotation: {x: 0.1094606, y: 0.10456538, z: 0.035446424, w: 0.9878401}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Finger21
+      parentName: valvebiped.bip01_r_Finger2
+      position: {x: -0.03222903, y: -0.0000000308787, z: 0.000000029555038}
+      rotation: {x: 5.0141e-15, y: -0.000000027325603, z: 0.00000029827265, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Finger22
+      parentName: valvebiped.bip01_r_Finger21
+      position: {x: -0.025635017, y: -0.000000025588028, z: -0.000000010828346}
+      rotation: {x: 0, y: -0, z: -0.19557105, w: 0.9806895}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Finger0
+      parentName: valvebiped.bip01_r_Hand
+      position: {x: -0.007488058, y: 0.008230506, z: 0.024825603}
+      rotation: {x: -0.79441255, y: 0.08915092, z: 0.2453932, w: 0.5484004}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Finger01
+      parentName: valvebiped.bip01_r_Finger0
+      position: {x: -0.046226118, y: -0.00000004673483, z: 0.000000018521614}
+      rotation: {x: -0.0000000050056106, y: 0.000000010232914, z: 0.00000012300724, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Finger02
+      parentName: valvebiped.bip01_r_Finger01
+      position: {x: -0.03602111, y: 0.0000000323115, z: -0.000000018608294}
+      rotation: {x: 0, y: -0, z: -0.104016736, w: 0.99457556}
+      scale: {x: 1, y: 1, z: 1}
+    - name: palm_r
+      parentName: valvebiped.bip01_r_Hand
+      position: {x: -0.05421164, y: 0.02639982, z: -0.006573956}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bone0041
+      parentName: valvebiped.bip01_r_Hand
+      position: {x: -0.05421164, y: 0.02639982, z: -0.006573956}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_elbow
+      parentName: valvebiped.bip01_r_ForeArm
+      position: {x: 4.1475132e-10, y: 0.005000002, z: 0.0000000024580333}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Clavicle
+      parentName: valvebiped.bip01_Spine2
+      position: {x: -0.1319922, y: -0.042078555, z: 0.05547081}
+      rotation: {x: 0.054368127, y: -0.6616345, z: -0.032656994, w: 0.7471395}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_UpperArm
+      parentName: valvebiped.bip01_l_Clavicle
+      position: {x: 0.08304004, y: 0.000000001405749, z: -0.0000036029737}
+      rotation: {x: 0.006927759, y: -0.059060797, z: 0.06287017, w: 0.99624854}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_ForeArm
+      parentName: valvebiped.bip01_l_UpperArm
+      position: {x: 0.25342312, y: 0.0000005471911, z: 0.000004771347}
+      rotation: {x: 0.0000016116869, y: -0.000011833537, z: 0.000004323294, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Hand
+      parentName: valvebiped.bip01_l_ForeArm
+      position: {x: 0.25399587, y: -0.0000008814864, z: -0.0000013901757}
+      rotation: {x: 0.308854, y: -0.02424558, z: 0.028126692, w: 0.95038426}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Finger1
+      parentName: valvebiped.bip01_l_Hand
+      position: {x: 0.07981315, y: 0.008234088, z: -0.0291905}
+      rotation: {x: -0.013714398, y: 0.09934148, z: 0.048093546, w: 0.9937958}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Finger11
+      parentName: valvebiped.bip01_l_Finger1
+      position: {x: 0.031075587, y: 0.0000014026931, z: -0.0000009674719}
+      rotation: {x: 0.0000025699144, y: 0.000016012564, z: 0.000032051088, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Finger12
+      parentName: valvebiped.bip01_l_Finger11
+      position: {x: 0.030997647, y: -0.0000007562849, z: -0.00000028254715}
+      rotation: {x: 0, y: -0, z: -0.15332493, w: 0.9881758}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Finger2
+      parentName: valvebiped.bip01_l_Hand
+      position: {x: 0.07939577, y: 0.0061667026, z: 0.012247193}
+      rotation: {x: 0.10946256, y: 0.104545034, z: 0.035438154, w: 0.9878423}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Finger21
+      parentName: valvebiped.bip01_l_Finger2
+      position: {x: 0.032229338, y: 0.00000025047768, z: -0.00000031168753}
+      rotation: {x: -0.0000039492934, y: 0.000019477333, z: 0.000019806004, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Finger22
+      parentName: valvebiped.bip01_l_Finger21
+      position: {x: 0.02563454, y: -0.0000008860106, z: 0.00000058984705}
+      rotation: {x: 0, y: -0, z: -0.19557105, w: 0.9806895}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Finger0
+      parentName: valvebiped.bip01_l_Hand
+      position: {x: 0.0074920175, y: -0.008234068, z: -0.02482359}
+      rotation: {x: -0.7944146, y: 0.08912758, z: 0.24537073, w: 0.5484113}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Finger01
+      parentName: valvebiped.bip01_l_Finger0
+      position: {x: 0.046225064, y: 0.00000068214626, z: 0.0000013218742}
+      rotation: {x: -0.0000026505431, y: 0.0000033770293, z: -0.000003139356, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Finger02
+      parentName: valvebiped.bip01_l_Finger01
+      position: {x: 0.036018703, y: 0.00000072021567, z: 0.00000090197005}
+      rotation: {x: 0, y: -0, z: -0.104016736, w: 0.99457556}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pal__l
+      parentName: valvebiped.bip01_l_Hand
+      position: {x: 0.054212183, y: -0.02640072, z: 0.0065742265}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: palm_l
+      parentName: valvebiped.bip01_l_Hand
+      position: {x: 0.054212183, y: -0.02640072, z: 0.0065742265}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_elbow
+      parentName: valvebiped.bip01_l_ForeArm
+      position: {x: 0.00000037948502, y: -0.0050001964, z: -0.00000012870217}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: breath_jnt
+      parentName: valvebiped.bip01_Spine1
+      position: {x: -0.06123262, y: 2.3973878e-17, z: 6.125742e-20}
+      rotation: {x: 0.0000010000001, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: breathe_jnt_end
+      parentName: breath_jnt
+      position: {x: 4.2632563e-16, y: 0.05000002, z: -3.156017e-14}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: breast_Right
+      parentName: valvebiped.bip01_Spine1
+      position: {x: -0.19025281, y: 0.03139987, z: -0.07894557}
+      rotation: {x: -0.4070982, y: 0.57816154, z: 0.40709755, w: 0.5781625}
+      scale: {x: 1, y: 1, z: 1}
+    - name: breast_Right_end
+      parentName: breast_Right
+      position: {x: 8.2600595e-15, y: 1.2590817e-13, z: 0.04939325}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: breast_Left
+      parentName: valvebiped.bip01_Spine1
+      position: {x: -0.19025393, y: 0.031399548, z: 0.07894533}
+      rotation: {x: 0.5781632, y: 0.40709704, z: -0.5781609, w: 0.40709868}
+      scale: {x: 1, y: 1, z: 1}
+    - name: breast_Left_end
+      parentName: breast_Left
+      position: {x: -0.00000014269195, y: 0.000003007298, z: -0.04939435}
+      rotation: {x: 0.000002366272, y: -1.1198504e-11, z: -6.0439618e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: butt_Right
+      parentName: valvebiped.bip01_Pelvis
+      position: {x: -0.03947904, y: -0.0000014109961, z: -0.0605236}
+      rotation: {x: -0.061882008, y: 0.70439136, z: 0.061881572, w: 0.70439637}
+      scale: {x: 1, y: 1, z: 1}
+    - name: butt_Right_end
+      parentName: butt_Right
+      position: {x: -0.000000040500666, y: -0.02, z: 0.0000030662288}
+      rotation: {x: 0.0000030021401, y: -1.8025763e-11, z: 1.7999898e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: butt_Left
+      parentName: valvebiped.bip01_Pelvis
+      position: {x: -0.03947904, y: -0.0000011689018, z: 0.0605236}
+      rotation: {x: 0.7043967, y: 0.061881516, z: -0.704391, w: 0.06188202}
+      scale: {x: 1, y: 1, z: 1}
+    - name: butt_Left_end
+      parentName: butt_Left
+      position: {x: -0.000000011026832, y: 0.020000005, z: -0.0000029317735}
+      rotation: {x: 0.0000030021351, y: 1.9343956e-12, z: 0.00000064433993, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Thigh
+      parentName: valvebiped.bip01_Pelvis
+      position: {x: -0.000000038086135, y: 0.00000029303976, z: 0.09325989}
+      rotation: {x: 0.99991375, y: -0.012969686, z: -0.000028288463, w: 0.0020806675}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Calf
+      parentName: valvebiped.bip01_l_Thigh
+      position: {x: 0.3991276, y: -0.000000068216295, z: 0.000000102461385}
+      rotation: {x: -0.000000026540421, y: -0.000014818881, z: 0.0042133788, w: 0.9999911}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Foot
+      parentName: valvebiped.bip01_l_Calf
+      position: {x: 0.49677318, y: -0.000004096172, z: 0.00000023136093}
+      rotation: {x: -0.006997871, y: 0.017291468, z: -0.38680384, w: 0.92197335}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Toe0
+      parentName: valvebiped.bip01_l_Foot
+      position: {x: 0.13415268, y: -0.00000006061143, z: -0.0000007659986}
+      rotation: {x: -0.000000029165248, y: 0.000000039397268, z: -0.4083683, w: 0.91281724}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Toe0_end
+      parentName: valvebiped.bip01_l_Toe0
+      position: {x: 0.06000002, y: -0.00000001674815, z: 0.0000018935878}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_Calf1
+      parentName: valvebiped.bip01_l_Calf
+      position: {x: -1.4210854e-16, y: -3.5527136e-17, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_l_knee
+      parentName: valvebiped.bip01_l_Calf
+      position: {x: -7.105427e-17, y: -3.5527136e-17, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Thigh
+      parentName: valvebiped.bip01_Pelvis
+      position: {x: -0.00000003808595, y: -0.000000079999836, z: -0.09325989}
+      rotation: {x: 0.013065198, y: 0.9999125, z: 0.0020785308, w: 0.000028730543}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Calf
+      parentName: valvebiped.bip01_r_Thigh
+      position: {x: -0.3991276, y: 0.000000068216295, z: -0.00000010246137}
+      rotation: {x: -0.00000005971956, y: -0.00001419788, z: 0.004042758, w: 0.99999183}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Foot
+      parentName: valvebiped.bip01_r_Calf
+      position: {x: -0.49677318, y: 0.000004096172, z: -0.00000023136087}
+      rotation: {x: -0.006999178, y: 0.017290877, z: -0.38673452, w: 0.92200243}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Toe0
+      parentName: valvebiped.bip01_r_Foot
+      position: {x: -0.13415268, y: 0.00000006061143, z: 0.0000007659986}
+      rotation: {x: -0.000000010656734, y: 0.000000070188435, z: -0.4083683, w: 0.9128173}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Toe0_end
+      parentName: valvebiped.bip01_r_Toe0
+      position: {x: -0.06000002, y: 0.00000001674815, z: -0.0000018935878}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_Calf1
+      parentName: valvebiped.bip01_r_Calf
+      position: {x: 2.842171e-16, y: -1.7763568e-17, z: 7.105427e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: valvebiped.bip01_r_knee
+      parentName: valvebiped.bip01_r_Calf
+      position: {x: 2.842171e-16, y: -1.7763568e-17, z: 7.105427e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -101,7 +751,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
