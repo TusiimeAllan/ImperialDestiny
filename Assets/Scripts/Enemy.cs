@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
@@ -15,6 +16,11 @@ public class Enemy : MonoBehaviour
     public GameObject selectionSprite;
     public GameObject face; // Where the Player will stand while fighting
 
+    [Space]
+    [Header("Life Bar")]
+    public GameObject lifeContainer;
+    public TextMeshProUGUI lifeText;
+
     private void Start()
     {
         HealthSystem _healthSystem = new HealthSystem(100);
@@ -25,6 +31,10 @@ public class Enemy : MonoBehaviour
 
         GameObject instantiatedEnemy = Instantiate(characterPrefab, transform.position, transform.rotation);
         character = instantiatedEnemy;
+
+        lifeText.text = currentHealth.ToString();
+        float healthPercent = Mathf.Clamp(healthSystem.GetHealthPercent(), 0f, 1f);
+        lifeContainer.transform.localScale = new Vector3(healthPercent, lifeContainer.transform.localScale.y, lifeContainer.transform.localScale.z);
     }
 
     private void Update()

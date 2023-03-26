@@ -24,6 +24,11 @@ public class HealthSystem
         }
     }
 
+    public float GetHealthPercent()
+    {
+        return (float)health / maxHealth;
+    }
+
     public void Heal(int healAmount)
     {
         health += healAmount;
