@@ -3,6 +3,7 @@ using TMPro;
 
 public class Enemy : MonoBehaviour
 {
+    private GameManager _gameManager;
     public HealthSystem healthSystem;
     public EnemyData enemyData;
     public GameObject characterPrefab;
@@ -23,6 +24,8 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        _gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+
         HealthSystem _healthSystem = new HealthSystem(100);
         healthSystem = _healthSystem;
 

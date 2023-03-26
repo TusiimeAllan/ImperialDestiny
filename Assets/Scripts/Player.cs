@@ -3,6 +3,7 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
+    private GameManager _gameManager;
     public HealthSystem healthSystem;
     public PlayerData playerData;
     public GameObject characterPrefab;
@@ -21,6 +22,8 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        _gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+
         HealthSystem _healthSystem = new HealthSystem(100);
         healthSystem = _healthSystem;
 
@@ -38,6 +41,11 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.H) && selected)
+        {
+            _gameManager.HealSound.Play();
+        }
+
         if (currentHealth <= 0)
         {
             Die();

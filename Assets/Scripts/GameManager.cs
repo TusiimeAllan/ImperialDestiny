@@ -14,6 +14,11 @@ public class GameManager : MonoBehaviour
 
     private bool attackDone = false;
 
+    public AudioSource VictorySound;
+    public AudioSource DefeatSound;
+    public AudioSource AttackSound;
+    public AudioSource HealSound;
+
     private void Start()
     {
         playerData[currentPlayerIndex].selected = true;
@@ -103,6 +108,8 @@ public class GameManager : MonoBehaviour
 
         // Move Towards Target
         playerData[currentPlayerIndex].character.transform.localPosition = targetPosition;
+
+        AttackSound.Play();
 
         resetSelection();
     }
