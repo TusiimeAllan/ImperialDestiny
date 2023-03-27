@@ -45,6 +45,8 @@ GameObject:
   - component: {fileID: 966209516095711470}
   - component: {fileID: 6595669792202519188}
   - component: {fileID: 7105601596753283110}
+  - component: {fileID: 6972447106621560477}
+  - component: {fileID: -4143614801991635485}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Enemy
@@ -110,6 +112,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemy: {fileID: 11400000, guid: a4eee9a6401969c4a8d3ed869943d545, type: 2}
+--- !u!65 &6972447106621560477
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442332166681850452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.82, z: 0.3}
+--- !u!54 &-4143614801991635485
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442332166681850452}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &647728249917967683
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,14 +792,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2562084329957295692}
-  m_LocalRotation: {x: -0.70351326, y: -0.14747632, z: -0.061648756, w: 0.6924733}
-  m_LocalPosition: {x: 0.79334384, y: 1.4235002, z: 0.01390405}
+  m_LocalRotation: {x: 0.528604, y: 0.26054516, z: -0.70306826, w: -0.39798126}
+  m_LocalPosition: {x: -0.077, y: 0.135, z: 0.096}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 646488430408204804}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -82.984, y: -16.182, z: 88.81}
+  m_Father: {fileID: 1393793547327123661}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -3.118, y: -72.191, z: 123.248}
 --- !u!33 &2263710988489216851
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -880,6 +911,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8919179760841525667}
+  - {fileID: 2937906834289417462}
   m_Father: {fileID: 2986253770618419885}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1670,8 +1702,7 @@ Transform:
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2937906834289417462}
+  m_Children: []
   m_Father: {fileID: 966209516095711470}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

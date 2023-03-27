@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     public GameObject characterPrefab;
     private Animator characterAnimator;
 
-    private int currentHealth;
+    [SerializeField] private int currentHealth;
     [HideInInspector] public GameObject character;
 
     public bool turnReached = false;
@@ -21,6 +21,8 @@ public class Enemy : MonoBehaviour
     [Header("Life Bar")]
     public GameObject lifeContainer;
     public TextMeshProUGUI lifeText;
+
+    public bool isDead = false;
 
     private void Start()
     {
@@ -44,7 +46,7 @@ public class Enemy : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            Die();
+            isDead = true;
         }
 
         if (selected)
@@ -55,6 +57,21 @@ public class Enemy : MonoBehaviour
         {
             selectionSprite.SetActive(false);
         }
+
+        if (isDead)
+        {
+            Die();
+        }
+    }
+
+    public void UpdateHealth()
+    {
+        currentHealth = healthSystem.GetHealth();
+
+        lifeText.text = currentHealth.ToString();
+        float healthPercent = Mathf.Clamp(healthSystem.GetHealthPercent(), 0f, 1f);
+        lifeContainer.transform.localScale = new Vector3(healthPercent, lifeContainer.transform.localScale.y, lifeContainer.transform.localScale.z);
+
     }
 
     private void Die()

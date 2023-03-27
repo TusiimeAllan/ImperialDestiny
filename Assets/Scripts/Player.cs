@@ -8,7 +8,9 @@ public class Player : MonoBehaviour
     public PlayerData playerData;
     public GameObject characterPrefab;
     [SerializeField] private Animator characterAnimator;
-    [HideInInspector] public GameObject character;
+
+    // [HideInInspector] 
+    public GameObject character;
 
     [SerializeField] private int currentHealth;
     public bool selected = false;
@@ -59,6 +61,16 @@ public class Player : MonoBehaviour
         {
             selectionSprite.SetActive(false);
         }
+    }
+
+    public void UpdateHealth()
+    {
+        currentHealth = healthSystem.GetHealth();
+
+        lifeText.text = currentHealth.ToString();
+        float healthPercent = Mathf.Clamp(healthSystem.GetHealthPercent(), 0f, 1f);
+        lifeContainer.transform.localScale = new Vector3(healthPercent, lifeContainer.transform.localScale.y, lifeContainer.transform.localScale.z);
+
     }
 
     private void Die()

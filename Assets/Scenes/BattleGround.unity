@@ -322,6 +322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 244750449}
   - component: {fileID: 244750450}
+  - component: {fileID: 244750451}
   m_Layer: 0
   m_Name: Face
   m_TagString: Player
@@ -357,6 +358,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &244750451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244750448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4de0b31f5c24f4b88c9adb5637adff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &309961378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,6 +1873,7 @@ GameObject:
   m_Component:
   - component: {fileID: 985615188}
   - component: {fileID: 985615189}
+  - component: {fileID: 985615190}
   m_Layer: 0
   m_Name: Face
   m_TagString: Player
@@ -1895,6 +1909,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &985615190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985615187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4de0b31f5c24f4b88c9adb5637adff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1022648589
 GameObject:
   m_ObjectHideFlags: 0
@@ -2508,6 +2534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1414077467}
   - component: {fileID: 1414077468}
+  - component: {fileID: 1414077469}
   m_Layer: 0
   m_Name: Face
   m_TagString: Enemy
@@ -2523,7 +2550,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414077466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.006, y: 0, z: 0.251}
+  m_LocalPosition: {x: -0.006, y: 0, z: 0.414}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2543,6 +2570,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1414077469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414077466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4de0b31f5c24f4b88c9adb5637adff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1428815560
 GameObject:
   m_ObjectHideFlags: 0
@@ -3482,6 +3521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1775783770}
   - component: {fileID: 1775783771}
+  - component: {fileID: 1775783772}
   m_Layer: 0
   m_Name: Face
   m_TagString: Enemy
@@ -3497,7 +3537,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775783769}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.013, y: 0, z: 0.476}
+  m_LocalPosition: {x: 0.31, y: 0, z: 0.573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3517,6 +3557,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1775783772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775783769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4de0b31f5c24f4b88c9adb5637adff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1792587474
 GameObject:
   m_ObjectHideFlags: 0

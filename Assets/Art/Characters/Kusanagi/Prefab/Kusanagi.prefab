@@ -3475,6 +3475,8 @@ GameObject:
   - component: {fileID: 6881456167710791046}
   - component: {fileID: 693549086794534908}
   - component: {fileID: 5970470744215395960}
+  - component: {fileID: 7937653689131575803}
+  - component: {fileID: -1220558430832652812}
   m_Layer: 0
   m_Name: Kusanagi
   m_TagString: Enemy
@@ -3532,6 +3534,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemy: {fileID: 11400000, guid: 44448b6735d860a4fa8333a3d42e4c29, type: 2}
+--- !u!65 &7937653689131575803
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6067482570900295484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.83, z: 0}
+--- !u!54 &-1220558430832652812
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6067482570900295484}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6132068925168010011
 GameObject:
   m_ObjectHideFlags: 0
