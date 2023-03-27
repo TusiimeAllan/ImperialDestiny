@@ -29,11 +29,12 @@ public class Player : MonoBehaviour
         HealthSystem _healthSystem = new HealthSystem(100);
         healthSystem = _healthSystem;
 
-        characterAnimator = characterPrefab.GetComponent<Animator>();
         currentHealth = healthSystem.GetHealth();
 
         GameObject instantiatedPlayer = Instantiate(characterPrefab, transform.position, transform.rotation);
         character = instantiatedPlayer;
+
+        characterAnimator = character.GetComponent<Animator>();
 
         lifeText.text = currentHealth.ToString();
         float healthPercent = Mathf.Clamp(healthSystem.GetHealthPercent(), 0f, 1f);

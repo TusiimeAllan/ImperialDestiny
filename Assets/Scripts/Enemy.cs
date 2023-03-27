@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public HealthSystem healthSystem;
     public EnemyData enemyData;
     public GameObject characterPrefab;
-    private Animator characterAnimator;
+    [SerializeField] private Animator characterAnimator;
 
     [SerializeField] private int currentHealth;
     [HideInInspector] public GameObject character;
@@ -31,11 +31,12 @@ public class Enemy : MonoBehaviour
         HealthSystem _healthSystem = new HealthSystem(100);
         healthSystem = _healthSystem;
 
-        characterAnimator = characterPrefab.GetComponent<Animator>();
         currentHealth = healthSystem.GetHealth();
 
         GameObject instantiatedEnemy = Instantiate(characterPrefab, transform.position, transform.rotation);
         character = instantiatedEnemy;
+
+        characterAnimator = character.GetComponent<Animator>();
 
         lifeText.text = currentHealth.ToString();
         float healthPercent = Mathf.Clamp(healthSystem.GetHealthPercent(), 0f, 1f);
