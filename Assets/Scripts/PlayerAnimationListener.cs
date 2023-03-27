@@ -22,7 +22,7 @@ public class PlayerAnimationListener : MonoBehaviour
     IEnumerator _resumeIdle()
     {
         yield return new WaitForSeconds(0.5f);
-        _gameManager.resetFightingStanza();
+        _gameManager.resetFightingStanza(true);
         _player.PlayIdle(_animator);
     }
 }

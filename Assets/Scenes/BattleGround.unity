@@ -289,6 +289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: 44448b6735d860a4fa8333a3d42e4c29, type: 2}
   characterPrefab: {fileID: 6067482570900295484, guid: 1dd431bc7693b5c4a84414cc98adbf43, type: 3}
+  characterAnimator: {fileID: 0}
+  currentHealth: 0
   character: {fileID: 0}
   turnReached: 0
   selected: 0
@@ -296,6 +298,7 @@ MonoBehaviour:
   face: {fileID: 1414077466}
   lifeContainer: {fileID: 742750721}
   lifeText: {fileID: 1063491987}
+  isDead: 0
 --- !u!4 &230981071
 Transform:
   m_ObjectHideFlags: 0
@@ -3277,6 +3280,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyData: {fileID: 11400000, guid: a4eee9a6401969c4a8d3ed869943d545, type: 2}
   characterPrefab: {fileID: 442332166681850452, guid: 94c2aa67ca7f95e4c84cdc07a353b954, type: 3}
+  characterAnimator: {fileID: 0}
+  currentHealth: 0
   character: {fileID: 0}
   turnReached: 0
   selected: 0
@@ -3284,6 +3289,7 @@ MonoBehaviour:
   face: {fileID: 1775783769}
   lifeContainer: {fileID: 2098944172}
   lifeText: {fileID: 2014122702}
+  isDead: 0
 --- !u!4 &1693358242
 Transform:
   m_ObjectHideFlags: 0

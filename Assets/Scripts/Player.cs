@@ -46,6 +46,9 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.H) && selected)
         {
+            healthSystem.Heal(playerData.healAmount);
+            UpdateHealth();
+
             _gameManager.HealSound.Play();
         }
 

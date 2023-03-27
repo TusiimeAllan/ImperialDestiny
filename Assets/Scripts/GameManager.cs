@@ -94,6 +94,12 @@ public class GameManager : MonoBehaviour
             }
         }
 
+
+        if (attackDone)
+        {
+            EnemyAttack();
+        }
+
     }
 
     private void PlayerAttack()
@@ -114,16 +120,48 @@ public class GameManager : MonoBehaviour
         resetSelection();
     }
 
+    private void EnemyAttack()
+    {
+        attackDone = false;
+
+        int randomEnemyIndex = Random.Range(0, enemyData.Length);
+        Animator enemyAnimator = enemyData[randomEnemyIndex].character.GetComponent<Animator>();
+
+        int randomTargetIndex = Random.Range(0, playerData.Length);
+        GameObject player = playerData[randomTargetIndex].face.gameObject;
+
+        currentEnemyIndex = randomEnemyIndex;
+
+        enemyData[currentEnemyIndex].enemyData.PlayAttack(enemyAnimator);
+
+        Vector3 targetPosition = player.transform.position;
+
+        // Move Towards Target
+        enemyData[currentEnemyIndex].character.transform.localPosition = targetPosition;
+
+        AttackSound.Play();
+
+        resetSelection();
+    }
+
     private void resetSelection()
     {
         enemyData[currentEnemyIndex].selected = false;
         playerSelected = false;
     }
 
-    public void resetFightingStanza()
+    public void resetFightingStanza(bool player)
     {
-        playerData[currentPlayerIndex].character.transform.position = playerData[currentPlayerIndex].gameObject.transform.position;
-        attackDone = true;
+        if (player)
+        {
+            playerData[currentPlayerIndex].character.transform.position = playerData[currentPlayerIndex].gameObject.transform.position;
+            attackDone = true;
+        }
+        else
+        {
+            enemyData[currentEnemyIndex].character.transform.position = enemyData[currentEnemyIndex].gameObject.transform.position;
+        }
+
     }
 
     public void PlayGame()
