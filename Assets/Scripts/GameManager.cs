@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,8 +20,14 @@ public class GameManager : MonoBehaviour
 
     private bool gameOver = false;
 
+    [Space]
+    [Header("Post Combat")]
+    [SerializeField] private PostCombat postCombat;
+
+
     private void Start()
     {
+        postCombat = gameObject.GetComponent<PostCombat>();
         playerData[currentPlayerIndex].selected = true;
     }
 
@@ -218,8 +224,9 @@ public class GameManager : MonoBehaviour
         if (playersAlive && !enemiesAlive)
         {
             // You win
-            Debug.Log("You Win!");
             gameOver = true;
+
+            postCombat.YouWin();
 
             BGMusicSound.mute = true;
             VictorySound.Play();
@@ -227,17 +234,12 @@ public class GameManager : MonoBehaviour
         else if (!playersAlive && enemiesAlive)
         {
             // Enemies win
-            Debug.Log("You Loose!");
             gameOver = true;
+
+            postCombat.YouLoose();
 
             BGMusicSound.mute = true;
             DefeatSound.Play();
         }
-    }
-
-
-    public void PlayGame()
-    {
-        SceneManager.LoadScene("BattleGround");
     }
 }
