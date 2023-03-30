@@ -1,5 +1,5 @@
 # ImperialDestiny
-This Repository contains the Project Source Code for Imperial Destiny. 
+Imperial Destiny is a Japanese Role Play Game with fancy combat and easy to use Controls. Built in Unity Game Engine. 
 
 # Unity Version Used
 Unity 2021.3.8f1 (LTS)
