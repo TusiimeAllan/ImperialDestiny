@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyAnimationListener : MonoBehaviour
@@ -24,5 +23,9 @@ public class EnemyAnimationListener : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         _gameManager.resetFightingStanza(false);
         _enemy.PlayIdle(_animator);
+
+        _gameManager.enemyTurn = false;
+
+        _gameManager.CheckForWinner();
     }
 }

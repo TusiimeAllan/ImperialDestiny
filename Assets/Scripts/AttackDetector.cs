@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AttackDetector : MonoBehaviour
@@ -32,8 +30,6 @@ public class AttackDetector : MonoBehaviour
                 _enemy.healthSystem.Damage(_damageAmount);
 
                 _enemy.UpdateHealth();
-
-                Debug.Log("Player Detected");
             }
         }
         else if (_player != null)
@@ -44,8 +40,6 @@ public class AttackDetector : MonoBehaviour
                 _player.healthSystem.Damage(_damageAmount);
 
                 _player.UpdateHealth();
-
-                Debug.Log("Enemy Detected");
             }
         }
 

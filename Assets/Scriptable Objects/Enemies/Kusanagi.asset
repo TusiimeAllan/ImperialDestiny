@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 001607005f856bd4096c8163796013dc, type: 3}
   m_Name: Kusanagi
   m_EditorClassIdentifier: 
-  maxHealth: 100
   experienceGiven: 10
   attackStrength: 10
+  healAmount: 5
   idleAnimation: {fileID: 7400000, guid: 89ef50586c2f293449256d142f2aa74b, type: 2}
   attackAnimation: {fileID: 7400000, guid: 17780f30d02abbe45b74f1c856bd0d8a, type: 2}
   victoryAnimation: {fileID: 7400000, guid: 955beaf44cafc4b4ea09b9a6bdc5f182, type: 2}

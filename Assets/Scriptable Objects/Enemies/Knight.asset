@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 001607005f856bd4096c8163796013dc, type: 3}
   m_Name: Knight
   m_EditorClassIdentifier: 
-  maxHealth: 100
   experienceGiven: 10
-  attackStrength: 30
+  attackStrength: 70
+  healAmount: 5
   idleAnimation: {fileID: 7400000, guid: 4aad8992d76e4714c86350b48fd9eeec, type: 2}
   attackAnimation: {fileID: 7400000, guid: a58bc32ba58a2844cabf8ea536624903, type: 2}
   victoryAnimation: {fileID: 7400000, guid: dcf560638dc2fa74e94eae00e27abab0, type: 2}

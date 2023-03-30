@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,12 +10,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int currentEnemyIndex = 0;
     [SerializeField] private bool playerSelected = false;
 
-    private bool attackDone = false;
+    public bool enemyTurn = false;
 
     public AudioSource VictorySound;
     public AudioSource DefeatSound;
     public AudioSource AttackSound;
     public AudioSource HealSound;
+    public AudioSource BGMusicSound;
+
+    private bool gameOver = false;
 
     private void Start()
     {
@@ -26,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (!playerSelected)
+        if (!playerSelected && !gameOver)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
@@ -95,7 +96,7 @@ public class GameManager : MonoBehaviour
         }
 
 
-        if (attackDone)
+        if (enemyTurn && !gameOver)
         {
             EnemyAttack();
         }
@@ -122,12 +123,12 @@ public class GameManager : MonoBehaviour
 
     private void EnemyAttack()
     {
-        attackDone = false;
+        enemyTurn = false;
 
-        int randomEnemyIndex = Random.Range(0, enemyData.Length);
+        int randomEnemyIndex = selectAttackingEnemy();
         Animator enemyAnimator = enemyData[randomEnemyIndex].character.GetComponent<Animator>();
 
-        int randomTargetIndex = Random.Range(0, playerData.Length);
+        int randomTargetIndex = selectPlayerToAttack();
         GameObject player = playerData[randomTargetIndex].face.gameObject;
 
         currentEnemyIndex = randomEnemyIndex;
@@ -142,6 +143,32 @@ public class GameManager : MonoBehaviour
         AttackSound.Play();
 
         resetSelection();
+
+        CheckForWinner();
+    }
+
+    private int selectAttackingEnemy()
+    {
+        int index = Random.Range(0, enemyData.Length);
+
+        while (enemyData[index].getEnemyHealth() <= 0)
+        {
+            index = Random.Range(0, enemyData.Length);
+        }
+
+        return index;
+    }
+
+    private int selectPlayerToAttack()
+    {
+        int index = Random.Range(0, playerData.Length);
+
+        while (playerData[index].getPlayerHealth() <= 0)
+        {
+            index = Random.Range(0, playerData.Length);
+        }
+
+        return index;
     }
 
     private void resetSelection()
@@ -155,7 +182,6 @@ public class GameManager : MonoBehaviour
         if (player)
         {
             playerData[currentPlayerIndex].character.transform.position = playerData[currentPlayerIndex].gameObject.transform.position;
-            attackDone = true;
         }
         else
         {
@@ -163,6 +189,52 @@ public class GameManager : MonoBehaviour
         }
 
     }
+
+    public void CheckForWinner()
+    {
+        bool playersAlive = false;
+        bool enemiesAlive = false;
+
+        // Check if any players are still alive
+        foreach (Player player in playerData)
+        {
+            if (player.getPlayerHealth() > 0)
+            {
+                playersAlive = true;
+                break;
+            }
+        }
+
+        // Check if any enemies are still alive
+        foreach (Enemy enemy in enemyData)
+        {
+            if (enemy.getEnemyHealth() > 0)
+            {
+                enemiesAlive = true;
+                break;
+            }
+        }
+
+        if (playersAlive && !enemiesAlive)
+        {
+            // You win
+            Debug.Log("You Win!");
+            gameOver = true;
+
+            BGMusicSound.mute = true;
+            VictorySound.Play();
+        }
+        else if (!playersAlive && enemiesAlive)
+        {
+            // Enemies win
+            Debug.Log("You Loose!");
+            gameOver = true;
+
+            BGMusicSound.mute = true;
+            DefeatSound.Play();
+        }
+    }
+
 
     public void PlayGame()
     {

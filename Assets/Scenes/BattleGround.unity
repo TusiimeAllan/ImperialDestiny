@@ -292,13 +292,12 @@ MonoBehaviour:
   characterAnimator: {fileID: 0}
   currentHealth: 0
   character: {fileID: 0}
-  turnReached: 0
   selected: 0
   selectionSprite: {fileID: 1981844451}
   face: {fileID: 1414077466}
   lifeContainer: {fileID: 742750721}
   lifeText: {fileID: 1063491987}
-  isDead: 0
+  life: {fileID: 391333335}
 --- !u!4 &230981071
 Transform:
   m_ObjectHideFlags: 0
@@ -2174,6 +2173,7 @@ MonoBehaviour:
   face: {fileID: 985615187}
   lifeContainer: {fileID: 1274417082}
   lifeText: {fileID: 1730120886}
+  life: {fileID: 1930418104}
 --- !u!4 &1089607169
 Transform:
   m_ObjectHideFlags: 0
@@ -3283,13 +3283,12 @@ MonoBehaviour:
   characterAnimator: {fileID: 0}
   currentHealth: 0
   character: {fileID: 0}
-  turnReached: 0
   selected: 0
   selectionSprite: {fileID: 511206931}
   face: {fileID: 1775783769}
   lifeContainer: {fileID: 2098944172}
   lifeText: {fileID: 2014122702}
-  isDead: 0
+  life: {fileID: 701116135}
 --- !u!4 &1693358242
 Transform:
   m_ObjectHideFlags: 0
@@ -3614,6 +3613,7 @@ MonoBehaviour:
   face: {fileID: 244750448}
   lifeContainer: {fileID: 341298220}
   lifeText: {fileID: 1848019768}
+  life: {fileID: 1130465693}
 --- !u!4 &1792587476
 Transform:
   m_ObjectHideFlags: 0
@@ -3776,10 +3776,12 @@ MonoBehaviour:
   currentPlayerIndex: 0
   currentEnemyIndex: 0
   playerSelected: 0
+  enemyTurn: 0
   VictorySound: {fileID: 1488996312}
   DefeatSound: {fileID: 1691215489}
   AttackSound: {fileID: 1445028652}
   HealSound: {fileID: 752557400}
+  BGMusicSound: {fileID: 389874699}
 --- !u!4 &1821352708
 Transform:
   m_ObjectHideFlags: 0

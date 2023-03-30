@@ -12,7 +12,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int currentHealth;
     [HideInInspector] public GameObject character;
 
-    public bool turnReached = false;
     public bool selected = false;
     public GameObject selectionSprite;
     public GameObject face; // Where the Player will stand while fighting
@@ -21,8 +20,7 @@ public class Enemy : MonoBehaviour
     [Header("Life Bar")]
     public GameObject lifeContainer;
     public TextMeshProUGUI lifeText;
-
-    public bool isDead = false;
+    [SerializeField] private GameObject life;
 
     private void Start()
     {
@@ -47,7 +45,8 @@ public class Enemy : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            isDead = true;
+            life.SetActive(false);
+            Die();
         }
 
         if (selected)
@@ -57,11 +56,6 @@ public class Enemy : MonoBehaviour
         else
         {
             selectionSprite.SetActive(false);
-        }
-
-        if (isDead)
-        {
-            Die();
         }
     }
 
@@ -73,6 +67,11 @@ public class Enemy : MonoBehaviour
         float healthPercent = Mathf.Clamp(healthSystem.GetHealthPercent(), 0f, 1f);
         lifeContainer.transform.localScale = new Vector3(healthPercent, lifeContainer.transform.localScale.y, lifeContainer.transform.localScale.z);
 
+    }
+
+    public int getEnemyHealth()
+    {
+        return currentHealth;
     }
 
     private void Die()

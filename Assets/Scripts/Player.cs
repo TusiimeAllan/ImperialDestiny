@@ -21,9 +21,13 @@ public class Player : MonoBehaviour
     [Header("Life Bar")]
     public GameObject lifeContainer;
     public TextMeshProUGUI lifeText;
+    [SerializeField] private GameObject life;
 
     private void Start()
     {
+        lifeText.gameObject.SetActive(true);
+        lifeContainer.SetActive(true);
+
         _gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
 
         HealthSystem _healthSystem = new HealthSystem(100);
@@ -54,6 +58,7 @@ public class Player : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            life.SetActive(false);
             Die();
         }
 
@@ -75,6 +80,11 @@ public class Player : MonoBehaviour
         float healthPercent = Mathf.Clamp(healthSystem.GetHealthPercent(), 0f, 1f);
         lifeContainer.transform.localScale = new Vector3(healthPercent, lifeContainer.transform.localScale.y, lifeContainer.transform.localScale.z);
 
+    }
+
+    public int getPlayerHealth()
+    {
+        return currentHealth;
     }
 
     private void Die()
