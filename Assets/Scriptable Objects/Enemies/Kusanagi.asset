@@ -15,7 +15,7 @@ MonoBehaviour:
   experienceGiven: 10
   attackStrength: 10
   healAmount: 5
-  idleAnimation: {fileID: 7400000, guid: 89ef50586c2f293449256d142f2aa74b, type: 2}
-  attackAnimation: {fileID: 7400000, guid: 17780f30d02abbe45b74f1c856bd0d8a, type: 2}
-  victoryAnimation: {fileID: 7400000, guid: 955beaf44cafc4b4ea09b9a6bdc5f182, type: 2}
-  deathAnimation: {fileID: 7400000, guid: 6c9aaf6f0b12d8a4f9d3d51b50b6c42b, type: 2}
+  idleAnimation: {fileID: 7400000, guid: 0eae4f69332ed4f479d84906fd10b31d, type: 2}
+  attackAnimation: {fileID: 7400000, guid: b7caecd8c8374a747a6e989ba2852cf8, type: 2}
+  victoryAnimation: {fileID: 7400000, guid: 44a2c35cb546065409e557172adb00ed, type: 2}
+  deathAnimation: {fileID: 7400000, guid: 31691d2e0c142734da01985f374ca6d4, type: 2}
